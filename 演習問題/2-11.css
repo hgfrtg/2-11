@@ -8,6 +8,10 @@
   display: block;
   clear: both;
 }
+.all{
+	width: 1024px;
+	margin: 0 auto;
+}
 header{
 	width: 100%;
 	height: 70px;
@@ -36,7 +40,8 @@ header{
 	width: 100%;
 	height: 650px;
 	background-image: url(img/mv.png);
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
 }
 .main-visual-content{
 	height: 300px;
@@ -52,59 +57,63 @@ header{
 	font-size: 20px;
 	color: #fAfAfA;
 }
-main{
-	width: 100%;
-}
 .main-portfolio{
 	background-color: #ECEFF1;
 }
-.portfolio{
-	width: 920px;
-	padding: 90px 0;
-	margin: 0 auto;
-}
-.portfolio-headline {
-	border-bottom: 3px solid #EC715F;
-	padding-bottom: 8px;
+.headlinetxt {
+	padding-top: 90px;
 	font-size: 32px;
 	text-align: center;
 }
-.portfolio-text{
+.headlinetxt::after{
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	margin: 8px auto 0 auto;
+	background-color: #EC715F;
+}
+.headline-text{
+	padding-top: 30px;
 	text-align: center;
 	font-size: 16px;
-	margin: 30px auto;
+}
+.portfolio-group{
+	width: 920px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
 }
 .portfolio-image{
+	float: left;
 	width: 300px;
 	height: 250px;
+	margin: 5px 5px 0 0;
+	background-size: cover;
+	background-position: center;
 }
 .Feature{
 	width: 980px;
 	margin: 0 auto;
 }
-.Feature-headline {
-  border-bottom: 3px solid #EC715F;
-  padding-bottom: 8px;
-  font-size: 32px;
-  text-align: center;
-}
-.Feature-text{
-	text-align: center;
-	font-size: 16px;
-	margin: 30px auto;
-}
-.Feature-social {
-  display: inline-block;
-  margin-left: 20px;
-  width: 300px;
+.main-Strength{
+	width: 980px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
 }
 .Strength{
 	width: 320px;
 	height: auto;
+	margin-right: 5px;
 	text-align: center;
-	float: right;
+	float: left;
 }
-.fab{
+.fa-accusoft{
+	font-size:60px;
+}
+.fa-airbnb{
+	font-size:60px;
+}
+.fa-archway{
 	font-size:60px;
 }
 .Strength-headline {
@@ -118,6 +127,84 @@ main{
 	color: #000000;
 	text-align: left;
 }
-.fas{
-	font-size:60px;
+
+.main-profile{
+	background-color: #ECEFF1;
 }
+.profile{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.profile-item{
+	padding: 30px 0 90px 0;
+}
+.left-content{
+	width: 50%;
+	float: left;
+}
+.profile-image{
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-image: url(img/my-icon.jpg);
+}
+.right-content{
+	width: 50%;
+	float: right;
+}
+.my-headline{
+	width: 50%;
+	margin: 5px auto;
+	font-size: 20px;
+	text-align: left
+}
+.mynname-text{
+	text-align: left;
+	width: 50%;
+	font-size: 16px;
+	margin: 5px auto;
+}
+
+.Contact{
+	width: 800px;
+	padding: 90px 0;
+	margin: 0 auto;
+}
+
+.Contact-item{
+	padding: 30px 0 90px 0;
+}
+.right-contact-content {
+    width: 200px;
+    margin: 0 auto;
+}
+.SNS-headline{
+	text-align: left;
+	font-size: 20px;
+	margin: 5px auto;
+}
+.fa-facebook{
+	font-size:50px;
+	margin-right: 20px;
+}
+.fa-twitter{
+	font-size:50px;
+	margin-right: 20px;
+}
+.fa-instagram{
+	font-size:50px;
+}
+footer {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #EC715F;
+}
+
+.footer-text{
+	font-size: 16px;
+    color: #FAFAFA;
+    text-align: center;
+ }
